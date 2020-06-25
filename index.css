@@ -1,0 +1,14 @@
+.header{
+	text-align: center;
+	color:blue;
+	text-decoration: underline;
+}
+
+.dark-mode{
+	background-color: darkgray;
+	color:white;
+}
+body{
+   -webkit-tap-highlight-color:transparent;
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link href="index.css" rel="stylesheet" />
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+	<title>Covid-19 Tracker</title>
+</head>
+<body>
+	<div class="header">
+	<h1>Covid-19 Case in India</h1>
+	</div>
+<button onclick="darkMode()">darkmode</button>
+
+	<div class="container my-5">
+		<div class="row text-center">
+		   	<div class="col-3 text-danger">
+				<h4>Confirmed</h4>
+				<p id="confirmed"></p>
+			</div>
+			<div class="col-3 text-primary">
+				<h4>Active</h4>
+				<p id="active"></p>
+			</div>
+			<div class="col-3 text-success">
+				<h4>Recovered</h4>
+				<p id="recover"></p>
+			</div>
+		 	<div class="col-3 text-secondary">
+				<h4>Death</h4>
+				<p id="death"></p>
+			</div>
+		</div>
+
+       <div>
+       	<table class="table">
+       		<thead>
+       			<tr>
+       				<th>State</th>
+       				<th>Confirmed Case</th>
+       				<th>Active Case</th>
+       				<th>Recovered case</th>
+       				<th>Death</th>
+       			</tr>
+       		</thead>
+       		<tbody id="data">
+       			
+       		</tbody>
+       	</table>
+       </div>
+		<canvas id="mychart"></canvas>
+	</div>
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script src="data.js"></script>
+</html>
